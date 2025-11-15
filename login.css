@@ -1,0 +1,37 @@
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #4facfe, #00f2fe);
+  font-family: Arial, sans-serif;
+}
+.login-box {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+
+  text-align: center;
+  width: 320px;
+
+  box-sizing: border-box;
+}
+input,
+button {
+  width: calc(100% - 24px);
+  margin: 12px 0;
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+button {
+  background: #007bff;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+}
+button:hover {
+  background: #0056b3;
+}
