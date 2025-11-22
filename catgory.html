@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Categories</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 30px;
+            color: #333;
+        }
+
+        .container {
+            width: 90%;
+            margin: 30px auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .category-card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+            transition: 0.3s;
+            cursor: pointer;
+        }
+
+        .category-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+
+        .category-card img {
+            width: 80px;
+            height: 80px;
+            object-fit: contain;
+            margin-bottom: 15px;
+        }
+
+        .category-card h3 {
+            margin: 0;
+            color: #444;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Our Categories</h1>
+
+    <div class="container">
+
+        <div class="category-card">
+            <img src="https://cdn-icons-png.flaticon.com/512/3081/3081559.png" alt="Food" />
+            <h3>Food</h3>
+        </div>
+
+        <div class="category-card">
+            <img src="https://cdn-icons-png.flaticon.com/512/4320/4320337.png" alt="Clothes" />
+            <h3>Clothes</h3>
+        </div>
+
+        <div class="category-card">
+            <img src="https://cdn-icons-png.flaticon.com/512/3208/3208755.png" alt="Electronics" />
+            <h3>Electronics</h3>
+        </div>
+
+        <div class="category-card">
+            <img src="https://cdn-icons-png.flaticon.com/512/891/891399.png" alt="Books" />
+            <h3>Books</h3>
+        </div>
+
+    </div>
+
+</body>
+</html>
