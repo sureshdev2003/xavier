@@ -1,97 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Simple Payment UI</title>
-
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #f5f7fa;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      margin: 0;
-    }
-
-    .payment-container {
-      background: white;
-      padding: 25px;
-      width: 350px;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    }
-
-    h2 {
-      text-align: center;
-      margin-bottom: 20px;
-      color: #333;
-    }
-
-    label {
-      font-size: 14px;
-      color: #555;
-      margin-bottom: 6px;
-      display: block;
-    }
-
-    input {
-      width: 100%;
-      padding: 10px;
-      border-radius: 6px;
-      border: 1px solid #ccc;
-      margin-bottom: 15px;
-      font-size: 15px;
-    }
-
-    .row {
-      display: flex;
-      gap: 10px;
-    }
-
-    .pay-btn {
-      width: 100%;
-      padding: 12px;
-      background: #4CAF50;
-      color: white;
-      border: none;
-      font-size: 16px;
-      border-radius: 8px;
-      cursor: pointer;
-      transition: 0.3s;
-    }
-
-    .pay-btn:hover {
-      background: #45a049;
-    }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Testimonial Section</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-  <div class="payment-container">
-    <h2>Payment</h2>
 
-    <label>Cardholder Name</label>
-    <input type="text" placeholder="Enter name" />
+  <section class="testimonial-section">
+    <h2 class="title">What Our Users Say</h2>
 
-    <label>Card Number</label>
-    <input type="text" placeholder="1234 5678 9012 3456" />
+    <div class="testimonials">
 
-    <div class="row">
-      <div style="flex: 1">
-        <label>Expiry</label>
-        <input type="text" placeholder="MM/YY" />
+      <div class="testimonial-card">
+        <img src="https://via.placeholder.com/80" class="profile-img" />
+        <h3>John Doe</h3>
+        <p class="role">Software Developer</p>
+        <p class="message">
+          "This platform is absolutely amazing! It helped me learn faster and build real projects."
+        </p>
       </div>
 
-      <div style="flex: 1">
-        <label>CVV</label>
-        <input type="password" placeholder="123" />
+      <div class="testimonial-card">
+        <img src="https://via.placeholder.com/80" class="profile-img" />
+        <h3>Emma Watson</h3>
+        <p class="role">UI/UX Designer</p>
+        <p class="message">
+          "The user interface is smooth and easy to navigate. Loved the experience!"
+        </p>
       </div>
+
+      <div class="testimonial-card">
+        <img src="https://via.placeholder.com/80" class="profile-img" />
+        <h3>Michael Smith</h3>
+        <p class="role">Entrepreneur</p>
+        <p class="message">
+          "Best service I’ve used this year. Highly recommended for everyone!"
+        </p>
+      </div>
+
     </div>
+  </section>
 
-    <button class="pay-btn">Pay Now</button>
-  </div>
 </body>
 </html>
